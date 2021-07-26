@@ -1,0 +1,68 @@
+
+*{
+    background-color:lightpink;
+}
+
+.music_player_container{
+    width: 800px;
+    height: 300px;
+    font-family: cursive;
+    background:lightpink;
+    box-shadow: 0 0 12px 5px black;
+    color:black;
+}
+
+.music_logo{
+    float: left;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+.audio_player{
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.song_name{
+    background-color: lightpink;
+    padding: fixed;
+    width: 300px;
+    padding: 5px 0px 5px 0px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+
+.current_duration{
+    float: left;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: cursive;
+}
+.total_duration{
+    float: right;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.song_slider{
+    width: 300px;
+    margin-right: 20px;
+}
+
+.button{
+    clear: both;
+    display: table;
+}
+.volume_slider{
+    width: 150px;
+}
+
+.background{
+    height: 200px;
+    width: 500px;
+    margin-top: 262px;
+    margin-left: 1300px;
+}

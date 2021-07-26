@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio Player</title>
+</head>
+
+<body>
+    <main>
+        <div class="music_player_container">
+            <div class="music_logo">
+                <img src="images/logo.png" height="280px" width="300px" />
+            </div>
+            <div class="audio_player">
+                <div id="songName" class="song_Name">Song name </div>
+                <!--  onchange="searchSong()" -->
+                <input type="range" id="songSlider" class="song_slider" min="0" step="1" />
+                <div>
+                    <div id="currentDuration" class="current_duration">00:00</div>
+                    <div id="totalDuration" class="total_duration">00:00</div>
+                </div>
+                <div class="buttons">
+                    <!-- onclick="prev();" -->
+                    <img src="images/prev.png" width="45px" id="prevPlay" />
+                    <!--  onclick="playPause(this);" -->
+                    <img src="images/pause.png" width="55px" id="playPause" />
+                    <img src="images/next.png" width="45px" id="nextPlay" />
+                    <div>
+                        <input type="range" id="volumeSlider" class="volume_slider" min="0" max="1" step="0.02" />
+                        <!-- onchange="manageVolume()" -->
+                        <!-- onclick="muteUnmute();" -->
+                        <img src="images/soundup.png" width="25px" id="muteUnmute" />
+                    </div>
+                </div>
+                <div id="nextSongName" class="song_Name"><b>Next Song:</b>Next Song name</div>
+
+            </div>
+        </div>
+
+        <div id="background" class="background">
+            <img src="images/bg.png">
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
